@@ -33,9 +33,12 @@ function Secondnav() {
             </div>
             <div className='gg'>
                 {isSidebarVisible && <Sidebar />}
-                <div className="main-content">
-                    <div id="products"></div>
+                <div className={`main-content ${isSidebarVisible ? '' : 'sidebar-hidden'}`}>
+                    <div id="products" className={`product-grid ${isSidebarVisible ? 'sidebar-visible' : ''}`}>
+                        
+                    </div>
                 </div>
+
             </div>
         </div>
     );
