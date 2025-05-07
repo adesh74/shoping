@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './Header.jsx';
 import Secondnav from './Secondnav.jsx';
-import Sideba from './Sideba.jsx';
+import Sideba from './Sidebar.jsx';
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       </div>
       <Secondnav />
       <div className='bodydiv'>
-        <Sideba />
+        
         </div>
     </div>
   );

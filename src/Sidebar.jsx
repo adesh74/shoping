@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './side.css';
-import product from './script.js'
 
 function Sidebar() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -45,7 +44,7 @@ function Sidebar() {
         selectedItems.length > 0 ? `${selectedItems.join(', ')} ▼` : 'IDEAL FOR ▼';
 
     return (
-        <div className='gg'>
+        <div>
             <nav className="sidebar-container">
                 <h3>Customizable</h3>
                 <div className="dropdown" ref={dropdownRef}>
@@ -175,12 +174,7 @@ function Sidebar() {
                     </button>
                 </div>
             </nav>
-            <div class="main-content">
-            <div id="products">
-
-                
-            </div>
-            </div>
+            
         </div>
     );
 }
